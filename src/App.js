@@ -6,6 +6,7 @@ import store from "./store";
 
 import AppNavbar from "./components/layout/AppNavBar";
 import Dashbaord from "./components/layout/Dashboard";
+import AddClient from "./components/clients/AddClient";
 
 import "./App.css";
 
@@ -19,6 +20,7 @@ class App extends Component {
             <div className="container">
               <Switch>
                 <Route exact path="/" component={Dashbaord} />
+                <Route exact path="/client/add" component={AddClient} />
               </Switch>
             </div>
           </div>
